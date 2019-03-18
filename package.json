@@ -1,10 +1,11 @@
 {
   "name": "brain-games-saenkomm",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "First hexlet project",
   "keywords": ["hexlet", "brain", "game", "brain games"],
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"

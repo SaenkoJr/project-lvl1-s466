@@ -3,3 +3,6 @@
 [![Build Status](https://travis-ci.com/SaenkoJr/project-lvl1-s466.svg?branch=master)](https://travis-ci.com/SaenkoJr/project-lvl1-s466)
 
 ## Brain Games
+
+### Install and run
+[![asciicast](https://asciinema.org/a/9O8AqTUf1N4tehkAqXHRNqb7R.svg)](https://asciinema.org/a/9O8AqTUf1N4tehkAqXHRNqb7R)
