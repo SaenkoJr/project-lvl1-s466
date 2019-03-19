@@ -4,6 +4,7 @@ import getRandomNum from '../utils';
 const makeProgression = (progressionLength = 10) => {
   const step = getRandomNum(1, 15);
   const initValue = getRandomNum(0, 100);
+  const progression = [initValue];
 
   const iter = (acc) => {
     if (acc.length === progressionLength) return acc;
@@ -14,7 +15,7 @@ const makeProgression = (progressionLength = 10) => {
     return iter(newAcc);
   };
 
-  return iter([initValue]);
+  return iter(progression);
 };
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
