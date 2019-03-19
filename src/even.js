@@ -1,51 +1,38 @@
 import readlineSync from 'readline-sync';
 
 const isEven = num => num % 2 === 0;
-
-const isCorrectAnswer = (answer, num) => {
-  switch (answer) {
-    case 'yes':
-      return isEven(num);
-    case 'no':
-      return !isEven(num);
-    default:
-      return false;
-  }
-};
+const getRandomNum = () => Math.floor(Math.random() * 100);
 
 export default () => {
   console.log('Welcome to the Brain Games!');
-  console.log('Answer "yes" if number even otherwise answer "no".\n');
+  console.log('Answer "yes" if number even otherwise answer "no". \n');
 
   const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!\n`);
+  console.log(`Hello, ${userName}! \n`);
 
-  const correctAnswerMsg = 'Correct!';
-  const incorrectAnswerMsg = (answer) => {
-    const correctAnswer = answer === 'yes' ? 'no' : 'yes';
-    return `'${answer}' is wrong answer ;(.\nCorrect answer was '${correctAnswer}'. Let's try again, ${userName}!`;
-  };
+  const gameRoundsCount = 3;
 
-  const questionsCount = 3;
-
-  const retry = (times) => {
+  const playRound = (times) => {
     if (times === 0) {
       console.log(`Congratulations, ${userName}`);
       return;
     }
 
-    const randomNum = Math.floor(Math.random() * 100);
+    const gameQuestionNum = getRandomNum();
 
-    console.log(`Question: ${randomNum}`);
+    console.log(`Question: ${gameQuestionNum}`);
     const answer = readlineSync.question('Your answer: ');
 
-    if (isCorrectAnswer(answer, randomNum)) {
-      console.log(correctAnswerMsg);
-      retry(times - 1);
-    } else {
-      console.log(incorrectAnswerMsg(answer));
+    const correctAnswer = isEven(gameQuestionNum) ? 'yes' : 'no';
+
+    if (answer !== correctAnswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}!`);
+      return;
     }
+
+    console.log('Correct!');
+    playRound(times - 1);
   };
 
-  retry(questionsCount);
+  playRound(gameRoundsCount);
 };
