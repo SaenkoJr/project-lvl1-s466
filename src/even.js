@@ -12,7 +12,7 @@ export default () => {
 
   const gameRoundsCount = 3;
 
-  const playRound = (times) => {
+  const playGameRound = (times) => {
     if (times === 0) {
       console.log(`Congratulations, ${userName}`);
       return;
@@ -21,18 +21,18 @@ export default () => {
     const gameQuestionNum = getRandomNum();
 
     console.log(`Question: ${gameQuestionNum}`);
-    const answer = readlineSync.question('Your answer: ');
+    const userAnswer = readlineSync.question('Your answer: ');
 
     const correctAnswer = isEven(gameQuestionNum) ? 'yes' : 'no';
 
     if (answer !== correctAnswer) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}!`);
       return;
     }
 
     console.log('Correct!');
-    playRound(times - 1);
+    playGameRound(times - 1);
   };
 
-  playRound(gameRoundsCount);
+  playGameRound(gameRoundsCount);
 };
