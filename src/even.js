@@ -25,7 +25,7 @@ export default () => {
 
     const correctAnswer = isEven(gameQuestionNum) ? 'yes' : 'no';
 
-    if (answer !== correctAnswer) {
+    if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}!`);
       return;
     }
