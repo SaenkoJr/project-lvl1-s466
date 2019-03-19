@@ -12,3 +12,6 @@
 
 ### Play brain-calc
 [![asciicast](https://asciinema.org/a/s5t288nr1M16uzJ47tpxz42Vj.svg)](https://asciinema.org/a/s5t288nr1M16uzJ47tpxz42Vj)
+
+### Play brain-gcd
+[![asciicast](https://asciinema.org/a/yV1luveMJDr7DYid3YY94c9zr.svg)](https://asciinema.org/a/yV1luveMJDr7DYid3YY94c9zr)
