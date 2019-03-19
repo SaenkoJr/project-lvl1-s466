@@ -1,5 +1,5 @@
 import buildGame from '../core';
-import { getRandomNum } from '../utils/index';
+import getRandomNum from '../utils';
 
 const isEven = num => num % 2 === 0;
 
