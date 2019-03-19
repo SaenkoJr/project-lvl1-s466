@@ -1,15 +1,15 @@
-import gameBuild from '../core';
+import buildGame from '../core';
 import { getRandomNum } from '../utils/index';
 
 const isEven = num => num % 2 === 0;
 
-const description = 'Answer "yes" if number even otherwise answer "no".';
-const makeQuestion = () => {
-  const num = getRandomNum(0, 100);
-  const correctAnswer = isEven(num) ? 'yes' : 'no';
-  const question = `Question: ${num}`;
+const gameDescription = 'Answer "yes" if number even otherwise answer "no".';
+const makeGameQuestion = () => {
+  const gameQuestionNum = getRandomNum(0, 100);
+  const correctAnswer = isEven(gameQuestionNum) ? 'yes' : 'no';
+  const gameQuestion = `Question: ${gameQuestionNum}`;
 
-  return { question, correctAnswer };
+  return { gameQuestion, correctAnswer };
 };
 
-export default () => gameBuild(description, makeQuestion);
+export default () => buildGame(gameDescription, makeGameQuestion);
