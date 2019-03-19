@@ -4,5 +4,11 @@
 
 ## Brain Games
 
-### Install and run
-[![asciicast](https://asciinema.org/a/9O8AqTUf1N4tehkAqXHRNqb7R.svg)](https://asciinema.org/a/9O8AqTUf1N4tehkAqXHRNqb7R)
+### Install
+[![asciicast](https://asciinema.org/a/gLTxXFT5om6EGa4zEYi3xQ68X.svg)](https://asciinema.org/a/gLTxXFT5om6EGa4zEYi3xQ68X)
+
+### Play brain-even
+[![asciicast](https://asciinema.org/a/gzZrPLXovpPaVQgXv3IYKuKZ0.svg)](https://asciinema.org/a/gzZrPLXovpPaVQgXv3IYKuKZ0)
+
+### Play brain-calc
+[![asciicast](https://asciinema.org/a/s5t288nr1M16uzJ47tpxz42Vj.svg)](https://asciinema.org/a/s5t288nr1M16uzJ47tpxz42Vj)
