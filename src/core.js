@@ -4,10 +4,10 @@ const gameRoundsCount = 3;
 
 export default (gameDescription, makeGameQuestion) => {
   console.log('Welcome to the Brain Games!');
-  console.log(`${gameDescription} \n`);
+  console.log(`${gameDescription}\n`);
 
   const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}! \n`);
+  console.log(`Hello, ${userName}!\n`);
 
   const playGameRound = (times) => {
     if (times === 0) {
@@ -21,7 +21,8 @@ export default (gameDescription, makeGameQuestion) => {
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer !== correctAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
 
