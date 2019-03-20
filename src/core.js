@@ -17,7 +17,7 @@ export default (gameDescription, makeGameProcess) => {
 
     const { gameQuestion, correctAnswer } = makeGameProcess();
 
-    console.log(gameQuestion);
+    console.log(`Question: ${gameQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer !== correctAnswer) {

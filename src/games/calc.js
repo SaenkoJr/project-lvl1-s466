@@ -16,7 +16,7 @@ const makeGameProcess = () => {
   const leftConst = getRandomNum(0, 100);
   const rightConst = getRandomNum(0, 100);
 
-  const gameQuestion = `Question: ${leftConst} ${currentOperator} ${rightConst}`;
+  const gameQuestion = `${leftConst} ${currentOperator} ${rightConst}`;
 
   const currentExpression = operations[currentOperator];
   const expressionResult = currentExpression(leftConst, rightConst);
