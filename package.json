@@ -1,6 +1,6 @@
 {
   "name": "brain-games-saenkomm",
-  "version": "1.5.3",
+  "version": "1.6.3",
   "description": "First hexlet project",
   "keywords": ["hexlet", "brain", "game", "brain games"],
   "bin": {
