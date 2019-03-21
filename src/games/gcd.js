@@ -15,8 +15,7 @@ const makeGameProcess = () => {
   const num2 = getRandomNum(0, 100);
   const gcd = findGCD(num1, num2);
 
-  const gameQuestionBody = `${num1} ${num2}`;
-  const gameQuestion = `Question: ${gameQuestionBody}`;
+  const gameQuestion = `${num1} ${num2}`;
   const correctAnswer = gcd.toString();
 
   return { gameQuestion, correctAnswer };
