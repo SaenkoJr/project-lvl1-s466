@@ -18,3 +18,6 @@
 
 ### Play brain-progression
 [![asciicast](https://asciinema.org/a/hAR0s0r4PX5tdmemO1HOvkPl6.svg)](https://asciinema.org/a/hAR0s0r4PX5tdmemO1HOvkPl6)
+
+### Play brain-prime
+[![asciicast](https://asciinema.org/a/pzB96WIpmPiNRY9eWqmscOtPQ.svg)](https://asciinema.org/a/pzB96WIpmPiNRY9eWqmscOtPQ)
