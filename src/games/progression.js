@@ -1,9 +1,9 @@
-import buildGame from '../core';
+import runGame from '../core';
 import getRandomNum from '../utils';
 
 const length = 10;
 
-const makeProgression = (initValue, step, hiddenValueIndex) => {
+const makeMathProgressionWithHiddenValue = (initValue, step, hiddenValueIndex) => {
   const iter = (acc, index) => {
     if (index === length) return acc;
 
@@ -11,8 +11,8 @@ const makeProgression = (initValue, step, hiddenValueIndex) => {
       return iter(`${acc} ..`, index + 1);
     }
 
-    const nextValue = initValue + step * index;
-    const newAcc = `${acc} ${nextValue}`;
+    const currentValue = initValue + step * index;
+    const newAcc = `${acc} ${currentValue}`;
 
     return iter(newAcc, index + 1);
   };
@@ -21,17 +21,15 @@ const makeProgression = (initValue, step, hiddenValueIndex) => {
 };
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
-const makeGameProcess = () => {
+const makeGameData = () => {
   const step = getRandomNum(1, 15);
   const initValue = getRandomNum(0, 100);
-
   const hiddenValueIndex = getRandomNum(0, length - 1);
-  const hiddenValue = initValue + step * hiddenValueIndex;
 
-  const gameQuestion = makeProgression(initValue, step, hiddenValueIndex);
-  const correctAnswer = hiddenValue.toString();
+  const gameQuestion = makeMathProgressionWithHiddenValue(initValue, step, hiddenValueIndex);
+  const correctAnswer = String(initValue + step * hiddenValueIndex);
 
   return { gameQuestion, correctAnswer };
 };
 
-export default () => buildGame(gameDescription, makeGameProcess);
+export default () => runGame(gameDescription, makeGameData);

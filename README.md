@@ -1,23 +1,32 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d177a887871a48012255/maintainability)](https://codeclimate.com/github/SaenkoJr/project-lvl1-s466/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/d177a887871a48012255/test_coverage)](https://codeclimate.com/github/SaenkoJr/project-lvl1-s466/test_coverage)
 [![Build Status](https://travis-ci.com/SaenkoJr/project-lvl1-s466.svg?branch=master)](https://travis-ci.com/SaenkoJr/project-lvl1-s466)
 
-## Brain Games
+# Brain Games
 
-### Install
-[![asciicast](https://asciinema.org/a/gLTxXFT5om6EGa4zEYi3xQ68X.svg)](https://asciinema.org/a/gLTxXFT5om6EGa4zEYi3xQ68X)
+## Installation
+```
+$ npm install -g brain-games-saenkomm
+```
+[![asciicast](https://asciinema.org/a/9Fs7N7RAbdJg9CWBbpfHLtOzE.svg)](https://asciinema.org/a/9Fs7N7RAbdJg9CWBbpfHLtOzE?t=1&cols=80&rows=15)
 
-### Play brain-even
-[![asciicast](https://asciinema.org/a/gzZrPLXovpPaVQgXv3IYKuKZ0.svg)](https://asciinema.org/a/gzZrPLXovpPaVQgXv3IYKuKZ0)
+## List of the games
+- [Even Numbers](#even-numbers)
+- [Calculator](#calculator)
+- [Greatest Common Devisor](#greatest-common-devisor)
+- [Arithmetic Progression](#arithmetic-progression)
+- [Prime Numbers](#prime-numbers)
 
-### Play brain-calc
-[![asciicast](https://asciinema.org/a/s5t288nr1M16uzJ47tpxz42Vj.svg)](https://asciinema.org/a/s5t288nr1M16uzJ47tpxz42Vj)
+### Play even numbers
+[![asciicast](https://asciinema.org/a/DcyJzsi2FPmtqh61CHPIGRDnW.svg)](https://asciinema.org/a/DcyJzsi2FPmtqh61CHPIGRDnW?t=1&cols=80&rows=15)
 
-### Play brain-gcd
-[![asciicast](https://asciinema.org/a/yV1luveMJDr7DYid3YY94c9zr.svg)](https://asciinema.org/a/yV1luveMJDr7DYid3YY94c9zr)
+### Play calculator
+[![asciicast](https://asciinema.org/a/NWtWTnt7Vvrf19Xue2C5CRt5F.svg)](https://asciinema.org/a/NWtWTnt7Vvrf19Xue2C5CRt5F?t=1&cols=80&rows=15)
 
-### Play brain-progression
-[![asciicast](https://asciinema.org/a/hAR0s0r4PX5tdmemO1HOvkPl6.svg)](https://asciinema.org/a/hAR0s0r4PX5tdmemO1HOvkPl6)
+### Play greatest common devisor
+[![asciicast](https://asciinema.org/a/MEnOcFclLLJjIsehijWJUTFH4.svg)](https://asciinema.org/a/MEnOcFclLLJjIsehijWJUTFH4?t=1&cols=80&rows=15)
 
-### Play brain-prime
-[![asciicast](https://asciinema.org/a/pzB96WIpmPiNRY9eWqmscOtPQ.svg)](https://asciinema.org/a/pzB96WIpmPiNRY9eWqmscOtPQ)
+### Play arithmetic progression
+[![asciicast](https://asciinema.org/a/IB10cMxb0Y0IvAbifWzOzsXkM.svg)](https://asciinema.org/a/IB10cMxb0Y0IvAbifWzOzsXkM?t=1&cols=80&rows=15)
+
+### Play prime numbers
+[![asciicast](https://asciinema.org/a/3fdXxXYqt2docUXl6HF5lA9EJ.svg)](https://asciinema.org/a/3fdXxXYqt2docUXl6HF5lA9EJ?t=1&cols=80&rows=15)

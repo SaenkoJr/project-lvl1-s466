@@ -1,4 +1,4 @@
-import buildGame from '../core';
+import runGame from '../core';
 import getRandomNum from '../utils';
 
 const operators = ['+', '-', '*'];
@@ -8,21 +8,20 @@ const operations = {
   '*': (a, b) => a * b,
 };
 
-const getRandomOperator = (coll, maxDiapason) => coll[getRandomNum(0, maxDiapason)];
-
 const gameDescription = 'What is the result of the expression?';
-const makeGameProcess = () => {
-  const currentOperator = getRandomOperator(operators, operators.length - 1);
+const makeGameData = () => {
+  const currentOperatorIndex = getRandomNum(0, operators.length - 1);
+  const currentOperator = operators[currentOperatorIndex];
+
   const leftConst = getRandomNum(0, 100);
   const rightConst = getRandomNum(0, 100);
 
   const gameQuestion = `${leftConst} ${currentOperator} ${rightConst}`;
 
-  const currentExpression = operations[currentOperator];
-  const expressionResult = currentExpression(leftConst, rightConst);
-  const correctAnswer = expressionResult.toString();
+  const currentMathOperation = operations[currentOperator];
+  const correctAnswer = String(currentMathOperation(leftConst, rightConst));
 
   return { gameQuestion, correctAnswer };
 };
 
-export default () => buildGame(gameDescription, makeGameProcess);
+export default () => runGame(gameDescription, makeGameData);
