@@ -2,7 +2,12 @@
   "name": "brain-games-saenkomm",
   "version": "1.6.4",
   "description": "First hexlet project",
-  "keywords": ["hexlet", "brain", "game", "brain games"],
+  "keywords": [
+    "hexlet",
+    "brain",
+    "game",
+    "brain games"
+  ],
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
@@ -39,6 +44,7 @@
     "@babel/preset-env": "^7.3.4",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.2",
-    "eslint-config-airbnb-base": "^13.1.0"
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
   }
 }
