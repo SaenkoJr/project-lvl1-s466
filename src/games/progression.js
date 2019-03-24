@@ -3,7 +3,7 @@ import getRandomNum from '../utils';
 
 const length = 10;
 
-const makeMathProgressionWithHiddenValue = (initValue, step, hiddenValueIndex) => {
+const makeProgressionWithHiddenValue = (initValue, step, hiddenValueIndex) => {
   const iter = (acc, index) => {
     if (index === length) return acc;
 
@@ -26,7 +26,7 @@ const makeGameData = () => {
   const initValue = getRandomNum(0, 100);
   const hiddenValueIndex = getRandomNum(0, length - 1);
 
-  const gameQuestion = makeMathProgressionWithHiddenValue(initValue, step, hiddenValueIndex);
+  const gameQuestion = makeProgressionWithHiddenValue(initValue, step, hiddenValueIndex);
   const correctAnswer = String(initValue + step * hiddenValueIndex);
 
   return { gameQuestion, correctAnswer };
